@@ -79,25 +79,27 @@
         "precision": "89%",
         "recall": "91%"
       },
+      "github": "https://github.com/sathwik205/Advanced-Customer-Segmentation",
       "color": "purple"
     },
     {
-      "title": "Hyperspectral Anomaly Detection",
-      "icon": "fas fa-satellite-dish",
-      "tag": "Anomaly Detection | SVM",
-      "description": "Efficient framework that identifies rare objects in high-dimensional spectral datasets using ensemble outlier methods for environmental and agricultural monitoring.",
+      "title": "Family Health AI Tracker",
+      "icon": "fas fa-heartbeat",
+      "tag": "Generative AI | Full-Stack",
+      "description": "Intelligent health platform integrating Gemini 1.5 Flash to contextualize raw vitals into real-time, actionable wellness tips within a robust Flask architecture.",
       "tech": [
-        "Python",
-        "PCA",
-        "One-Class SVM",
-        "Isolation Forest"
+        "Flask",
+        "Gemini API",
+        "Bootstrap 5",
+        "JavaScript"
       ],
-      "highlight": null,
+      "highlight": "Custom DataValidator ensuring 100% integrity across 7+ physiological tracking categories.",
       "metrics": {
-        "accuracy": "94%",
-        "precision": "91%",
-        "recall": "88%"
+        "accuracy": "100%",
+        "precision": "100%",
+        "recall": "0.5s"
       },
+      "github": "https://github.com/sathwik205/Family-Health-Tracker",
       "color": "blue"
     },
     {
@@ -117,6 +119,7 @@
         "precision": "87%",
         "recall": "85%"
       },
+      "github": "https://github.com/sathwik205/Pollution-Level-Categorization",
       "color": "cyan"
     }
   ],
@@ -125,31 +128,38 @@
       "icon": "fas fa-trophy",
       "title": "Top 10 Rank in Hackathon",
       "date": "Feb 2024",
-      "desc": "Secured top 10 position in a competitive national-level hackathon."
+      "desc": "Secured top 10 position in a competitive national-level hackathon.",
+      "link": null
     },
     {
       "icon": "fas fa-terminal",
       "title": "100+ DSA Problems Solved",
       "date": "Ongoing",
-      "desc": "Consistently solving algorithmic challenges on LeetCode."
-    },
+      "desc": "Consistently solving algorithmic challenges on LeetCode.",
+      "link": "https://leetcode.com/sathwik205"
+    }
+  ],
+  "certifications": [
     {
       "icon": "fas fa-cloud",
       "title": "Oracle Cloud Infrastructure 2025",
       "date": "2025",
-      "desc": "Oracle Cloud Infrastructure 2025 AI Foundations Associate."
+      "desc": "Oracle Cloud Infrastructure 2025 AI Foundations Associate.",
+      "link": "https://drive.google.com/file/d/18sEQT0DoaFQNZ9ylgClwzwNsSukv8iu8/view?usp=drive_link"
     },
     {
       "icon": "fas fa-database",
       "title": "Oracle Data Platform 2025",
       "date": "2025",
-      "desc": "Oracle Data Platform 2025 Foundations Associate."
+      "desc": "Oracle Data Platform 2025 Foundations Associate.",
+      "link": "https://drive.google.com/file/d/1ECwTWmlI5jfn7bw_E4WL8xdCAkoI4Pk-/view?usp=drive_link"
     },
     {
       "icon": "fas fa-code-branch",
       "title": "DSA Certification — I Am Neo",
       "date": "2024",
-      "desc": "Intensive Data Structures & Algorithms program completion."
+      "desc": "Intensive Data Structures & Algorithms program completion.",
+      "link": "https://drive.google.com/YOUR_DSA_CERT_LINK"
     }
   ]
 }

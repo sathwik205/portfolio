@@ -121,6 +121,7 @@ async function loadData() {
         renderSkillMatrix(data.skills);
         renderProjects(data.projects);
         renderAchievements(data.achievements);
+        if(data.certifications) renderCertifications(data.certifications);
         renderContactLinks(data.profile);
         observeReveals();
         initTilt();
@@ -197,6 +198,9 @@ function renderProjects(projects) {
         const card = document.createElement('div');
         card.className = `project-card ${cls} reveal d${i+1}`;
         card.setAttribute('data-tilt',''); card.setAttribute('data-tilt-max','7');
+        const githubBtn = p.github
+            ? `<a href="${p.github}" class="project-github-btn" target="_blank" rel="noopener" onclick="event.stopPropagation()"><i class="fab fa-github"></i> View on GitHub</a>`
+            : '';
         card.innerHTML = `
             <div class="metrics-overlay">
                 <div class="metrics-title"><i class="fas fa-chart-bar"></i> Model Performance</div>
@@ -214,7 +218,8 @@ function renderProjects(projects) {
             <h3>${p.title}</h3>
             <p>${p.description}</p>
             ${highlight}
-            <div class="card-footer">${p.tech.map(t=>`<span class="tech-pill">${t}</span>`).join('')}</div>`;
+            <div class="card-footer">${p.tech.map(t=>`<span class="tech-pill">${t}</span>`).join('')}</div>
+            ${githubBtn}`;
         grid.appendChild(card);
     });
 }
@@ -226,12 +231,39 @@ function renderAchievements(list) {
     list.forEach((a, i) => {
         const item = document.createElement('div');
         item.className = `timeline-item reveal d${(i%4)+1}`;
+        const linkText = a.link && a.link.includes('leetcode') ? 'View Profile' : 'View Certificate';
+        const certLink = a.link
+            ? `<a href="${a.link}" class="cert-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> ${linkText}</a>`
+            : '';
         item.innerHTML = `
             <div class="timeline-dot"><i class="${a.icon}"></i></div>
             <div class="timeline-content glass-panel">
                 <span class="timeline-date">${a.date}</span>
                 <h4>${a.title}</h4>
                 <p>${a.desc}</p>
+                ${certLink}
+            </div>`;
+        container.appendChild(item);
+    });
+}
+
+function renderCertifications(list) {
+    const container = document.getElementById('certifications-container');
+    if(!container) return;
+    container.innerHTML = '';
+    list.forEach((a, i) => {
+        const item = document.createElement('div');
+        item.className = `timeline-item reveal d${(i%4)+1}`;
+        const certLink = a.link
+            ? `<a href="${a.link}" class="cert-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Credential</a>`
+            : '';
+        item.innerHTML = `
+            <div class="timeline-dot"><i class="${a.icon}"></i></div>
+            <div class="timeline-content glass-panel">
+                <span class="timeline-date">${a.date}</span>
+                <h4>${a.title}</h4>
+                <p>${a.desc}</p>
+                ${certLink}
             </div>`;
         container.appendChild(item);
     });
@@ -239,7 +271,7 @@ function renderAchievements(list) {
 
 /* Contact Links */
 function renderContactLinks(p) {
-    document.getElementById('contact-links').innerHTML = `
+    const html = `
         <a href="mailto:${p.email}"><i class="fas fa-envelope"></i>${p.email}</a>
         <a href="tel:${p.phone}"><i class="fas fa-phone"></i>${p.phone}</a>
         <a href="#"><i class="fas fa-map-marker-alt"></i>${p.location}</a>
@@ -248,6 +280,10 @@ function renderContactLinks(p) {
             <a href="${p.links.linkedin}" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
         </div>
         <a href="${p.resume||'#'}" class="neon-btn download-btn" target="_blank" rel="noopener"><i class="fas fa-download"></i> Download Resume</a>`;
+    
+    document.getElementById('contact-links').innerHTML = html;
+    const sectionContactLinks = document.getElementById('section-contact-links');
+    if(sectionContactLinks) sectionContactLinks.innerHTML = html;
 }
 
 /* ── CONTACT MODAL ── */
@@ -261,16 +297,19 @@ document.getElementById('close-modal').addEventListener('click', closeContact);
 overlay.addEventListener('click', e => { if (e.target === overlay) closeContact(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeContact(); });
 
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const btn = this.querySelector('.submit-btn');
-    btn.innerHTML = '<i class="fas fa-check-circle"></i> Transmission Sent!';
-    btn.style.borderColor = '#00f2ff'; btn.style.color = '#fff';
-    setTimeout(() => {
-        btn.innerHTML = 'Initiate Transfer <i class="fas fa-paper-plane"></i>';
-        btn.style.borderColor = ''; btn.style.color = '';
-        this.reset();
-    }, 3000);
+document.querySelectorAll('.contact-form').forEach(form => {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = this.querySelector('.submit-btn');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check-circle"></i> Transmission Sent!';
+        btn.style.borderColor = '#00f2ff'; btn.style.color = '#fff';
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.style.borderColor = ''; btn.style.color = '';
+            this.reset();
+        }, 3000);
+    });
 });
 
 /* ── BOOT ── */
