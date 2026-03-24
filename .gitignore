@@ -1,0 +1,19 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code settings (optional — remove the line below if you want to commit workspace settings)
+.vscode/
+
+# Node (not used here, but good practice if you ever add tooling)
+node_modules/
+npm-debug.log*
+
+# Environment files — never commit secrets
+.env
+.env.local
+
+# OS temp files
+*.tmp
+*.swp

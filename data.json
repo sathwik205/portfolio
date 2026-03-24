@@ -1,0 +1,155 @@
+{
+  "profile": {
+    "name": "Sathwik Sai Veerapuneni",
+    "typedRoles": [
+      "AI/ML Engineer",
+      "Machine Learning Enthusiast",
+      "Problem Solver"
+    ],
+    "tagline": "Engineering intelligent systems beyond boundaries.",
+    "email": "veerapunenisathwik@gmail.com",
+    "phone": "+91-6302894017",
+    "location": "Punjab, India",
+    "resume": "https://drive.google.com/file/d/1rCzvBk2MWBzSmkXou-yluoF7UXfD8mRH/view?usp=drive_link",
+    "links": {
+      "github": "https://github.com/sathwik205",
+      "linkedin": "https://linkedin.com/in/veerapunenisathwikchowdary"
+    }
+  },
+  "education": [
+    {
+      "institution": "Lovely Professional University",
+      "degree": "B.Tech — Computer Science & Engineering",
+      "specialization": "ML/AI",
+      "duration": "Aug '23 – Present",
+      "color": "#ff8c00"
+    },
+    {
+      "institution": "Narayana Junior College",
+      "degree": "Intermediate",
+      "duration": "Aug '21 – Mar '23",
+      "color": "#00f2ff"
+    },
+    {
+      "institution": "Narayana High School",
+      "degree": "Matriculation",
+      "duration": "Apr '20 – Jun '21",
+      "color": "#bc13fe"
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Python",
+      "Java",
+      "C++",
+      "Kotlin"
+    ],
+    "aiml": [
+      "Scikit-Learn",
+      "TensorFlow",
+      "Flask"
+    ],
+    "core": [
+      "DSA",
+      "OOP",
+      "Model Optimization"
+    ],
+    "tools": [
+      "MySQL",
+      "JDBC",
+      "Jupyter Notebook",
+      "GitHub"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Advanced Customer Segmentation",
+      "icon": "fas fa-users-cog",
+      "tag": "Clustering | PCA",
+      "description": "Unsupervised ML pipeline transforming raw consumer data into behavioral clusters with PCA-driven dimensionality reduction.",
+      "tech": [
+        "Python",
+        "PCA",
+        "K-Means",
+        "Neural Networks"
+      ],
+      "highlight": "Improved classification efficiency by 25% using PCA.",
+      "metrics": {
+        "accuracy": "92%",
+        "precision": "89%",
+        "recall": "91%"
+      },
+      "color": "purple"
+    },
+    {
+      "title": "Hyperspectral Anomaly Detection",
+      "icon": "fas fa-satellite-dish",
+      "tag": "Anomaly Detection | SVM",
+      "description": "Efficient framework that identifies rare objects in high-dimensional spectral datasets using ensemble outlier methods for environmental and agricultural monitoring.",
+      "tech": [
+        "Python",
+        "PCA",
+        "One-Class SVM",
+        "Isolation Forest"
+      ],
+      "highlight": null,
+      "metrics": {
+        "accuracy": "94%",
+        "precision": "91%",
+        "recall": "88%"
+      },
+      "color": "blue"
+    },
+    {
+      "title": "Pollution Level Categorization",
+      "icon": "fas fa-smog",
+      "tag": "KNN | Classification",
+      "description": "KNN predictive model classifying air quality from environmental sensor data with a complete preprocessing and feature-scaling pipeline.",
+      "tech": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "KNN"
+      ],
+      "highlight": null,
+      "metrics": {
+        "accuracy": "90%",
+        "precision": "87%",
+        "recall": "85%"
+      },
+      "color": "cyan"
+    }
+  ],
+  "achievements": [
+    {
+      "icon": "fas fa-trophy",
+      "title": "Top 10 Rank in Hackathon",
+      "date": "Feb 2024",
+      "desc": "Secured top 10 position in a competitive national-level hackathon."
+    },
+    {
+      "icon": "fas fa-terminal",
+      "title": "100+ DSA Problems Solved",
+      "date": "Ongoing",
+      "desc": "Consistently solving algorithmic challenges on LeetCode."
+    },
+    {
+      "icon": "fas fa-cloud",
+      "title": "Oracle Cloud Infrastructure 2025",
+      "date": "2025",
+      "desc": "Oracle Cloud Infrastructure 2025 AI Foundations Associate."
+    },
+    {
+      "icon": "fas fa-database",
+      "title": "Oracle Data Platform 2025",
+      "date": "2025",
+      "desc": "Oracle Data Platform 2025 Foundations Associate."
+    },
+    {
+      "icon": "fas fa-code-branch",
+      "title": "DSA Certification — I Am Neo",
+      "date": "2024",
+      "desc": "Intensive Data Structures & Algorithms program completion."
+    }
+  ]
+}

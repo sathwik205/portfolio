@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sathwik Sai Veerapuneni — AI/ML Engineer Portfolio">
+    <title>Sathwik Sai Veerapuneni | AI & ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;600&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+    <div class="gravity-well"></div>
+
+    <!-- NAVBAR -->
+    <nav class="glass-nav" id="navbar">
+        <div class="logo">S<span class="neon-text">V</span></div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#achievements">Timeline</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+
+    <main>
+        <!-- HERO -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content" id="hero-content">
+                <p class="hero-pre-title" id="hero-pre-title"></p>
+                <h1 class="glitch" data-text="Sathwik Sai Veerapuneni">
+                    Sathwik Sai<br><span class="hero-surname">Veerapuneni</span>
+                </h1>
+                <!-- Typed animation target -->
+                <h2 class="neon-subtitle">
+                    <span id="typed-text"></span><span class="typed-cursor"></span>
+                </h2>
+                <p class="tagline" id="hero-tagline"></p>
+                <div class="cta-group">
+                    <a href="#projects" class="neon-btn primary-btn" data-tilt data-tilt-scale="1.05">
+                        <i class="fas fa-satellite"></i> View Research
+                    </a>
+                    <a href="#" class="neon-btn secondary-btn" id="open-contact-btn" data-tilt data-tilt-scale="1.05">
+                        <i class="fas fa-broadcast-tower"></i> Contact Core
+                    </a>
+                </div>
+                <div class="hero-meta" id="hero-meta"></div>
+            </div>
+            <div class="holographic-profile" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.2" data-tilt-max="12">
+                <div class="holo-ring ring-1"></div>
+                <div class="holo-ring ring-2"></div>
+                <div class="holo-scanline"></div>
+                <div class="profile-inner">
+                    <img src="profile.jpg" alt="Sathwik Sai Veerapuneni" onerror="this.style.display='none'">
+                    <div class="profile-fallback"><i class="fas fa-user-astronaut"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about-section">
+            <h2 class="section-title reveal">About <span class="neon-text">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-bio glass-panel reveal d1" data-tilt data-tilt-max="5">
+                    <h3><i class="fas fa-dna"></i> Core Profile</h3>
+                    <p>Aspiring AI/ML Engineer with a strong foundation in Machine Learning, Data Structures, and Object-Oriented Programming. Passionate about building intelligent systems and solving real-world problems through data-driven approaches.</p>
+                    <div class="bio-location"><i class="fas fa-map-marker-alt"></i> <span id="bio-location"></span></div>
+                </div>
+                <div class="education-orbit reveal d2" id="edu-orbit">
+                    <div class="edu-center-core">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS / PROFESSIONAL SKILL MATRIX -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-title reveal">Professional <span class="neon-text">Skill Matrix</span></h2>
+            <p class="skills-hint reveal">Hover a group to illuminate the tech stack</p>
+            <div class="skill-matrix" id="skill-matrix"></div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title reveal">High-Impact <span class="neon-text">Projects</span></h2>
+            <p class="skills-hint reveal"><i class="fas fa-info-circle"></i> Hover a project card to reveal its model metrics</p>
+            <div class="projects-grid" id="projects-grid"></div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="services-section">
+            <h2 class="section-title reveal">Service <span class="neon-text">Grid</span></h2>
+            <div class="panels-container">
+                <div class="energy-panel reveal d1" data-tilt data-tilt-max="10">
+                    <i class="fas fa-robot panel-icon"></i>
+                    <h4>Machine Learning Solutions</h4>
+                    <p>End-to-end model design, training, and deployment for real-world problems.</p>
+                </div>
+                <div class="energy-panel reveal d2" data-tilt data-tilt-max="10">
+                    <i class="fas fa-database panel-icon"></i>
+                    <h4>Data Analysis & Preprocessing</h4>
+                    <p>Cleaning, transforming, and engineering features to maximize model performance.</p>
+                </div>
+                <div class="energy-panel reveal d3" data-tilt data-tilt-max="10">
+                    <i class="fas fa-chart-line panel-icon"></i>
+                    <h4>Model Optimization</h4>
+                    <p>Hyperparameter tuning, cross-validation, and metric-driven evaluation cycles.</p>
+                </div>
+                <div class="energy-panel reveal d4" data-tilt data-tilt-max="10">
+                    <i class="fas fa-server panel-icon"></i>
+                    <h4>Backend Development</h4>
+                    <p>Flask-based REST APIs to serve ML models and expose intelligent endpoints.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS -->
+        <section id="achievements" class="achievements-section">
+            <h2 class="section-title reveal">Achievement <span class="neon-text">Timeline</span></h2>
+            <div class="timeline" id="timeline-container"></div>
+        </section>
+    </main>
+
+    <!-- Fixed Gravity Core Contact Button -->
+    <div class="gravity-core-btn" id="open-contact-btn-fixed" title="Open Contact">
+        <i class="fas fa-satellite-dish"></i>
+        <span>Contact</span>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="contact-overlay" id="contact-overlay">
+        <div class="contact-modal glass-panel" id="contact-modal">
+            <button class="close-modal" id="close-modal" aria-label="Close"><i class="fas fa-times"></i></button>
+            <h3><i class="fas fa-broadcast-tower"></i> Gravity Core</h3>
+            <p class="modal-sub">Open a transmission channel</p>
+            <div class="contact-links" id="contact-links"></div>
+            <form class="contact-form" id="contact-form" novalidate>
+                <div class="input-group">
+                    <input type="text" id="cname" required autocomplete="off">
+                    <label for="cname">Name</label>
+                    <div class="input-glow"></div>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="cemail" required autocomplete="off">
+                    <label for="cemail">Email</label>
+                    <div class="input-glow"></div>
+                </div>
+                <div class="input-group">
+                    <textarea id="cmessage" rows="4" required></textarea>
+                    <label for="cmessage">Message</label>
+                    <div class="input-glow"></div>
+                </div>
+                <button type="submit" class="neon-btn primary-btn submit-btn">
+                    Initiate Transfer <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
