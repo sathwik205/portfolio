@@ -1,4 +1,6 @@
-// Single content source. Edit with editor.html; instructions in START-HERE.html.
+// EDIT YOUR CONTENT HERE — or open editor.html for forms.
+// Projects, achievements, profile and page copy all live in this file.
+// Keep project IDs stable. Publish this file together with any new images.
 window.PORTFOLIO = {
   "profile": {
     "name": "Sathwik Sai Veerapuneni",
@@ -15,51 +17,30 @@ window.PORTFOLIO = {
     "links": {
       "github": "https://github.com/sathwik205",
       "linkedin": "https://linkedin.com/in/veerapunenisathwikchowdary"
-    }
+    },
+    "shortName": "Sathwik",
+    "surname": "Veerapuneni",
+    "initials": "SV",
+    "portraitWebp": "assets/sathwik.webp",
+    "portraitPng": "assets/sathwik.png"
   },
-  "education": [
-    {
-      "institution": "Lovely Professional University",
-      "degree": "B.Tech \u2014 Computer Science & Engineering",
-      "specialization": "ML/AI",
-      "duration": "Aug '23 \u2013 Present",
-      "color": "#ff8c00"
-    },
-    {
-      "institution": "Narayana Junior College",
-      "degree": "Intermediate",
-      "duration": "Aug '21 \u2013 Mar '23",
-      "color": "#00f2ff"
-    },
-    {
-      "institution": "Narayana High School",
-      "degree": "Matriculation",
-      "duration": "Apr '20 \u2013 Jun '21",
-      "color": "#bc13fe"
-    }
-  ],
-  "skills": {
-    "languages": [
-      "Python",
-      "Java",
-      "C++",
-      "Kotlin"
-    ],
-    "aiml": [
-      "Scikit-Learn",
-      "TensorFlow",
-      "Flask"
-    ],
-    "core": [
-      "DSA",
-      "OOP",
-      "Model Optimization"
-    ],
-    "tools": [
-      "MySQL",
-      "JDBC",
-      "Jupyter Notebook",
-      "GitHub"
+  "page": {
+    "heroStatus": "AI / ML · ENGINEER IN THE MAKING",
+    "headlineStart": "Built on",
+    "headlineMain": "curiosity",
+    "headlineAccent": "Powered by AI.",
+    "heroDescription": "I turn data into decisions and ideas into intelligent systems.\nExplore the experiments. Meet the mind behind them.",
+    "identityTagline": "Problem solver. Builder. Perpetual learner.",
+    "biography": "Aspiring AI/ML Engineer with a strong foundation in Machine Learning, Data Structures, and Object-Oriented Programming. Passionate about building intelligent systems and solving real-world problems through data-driven approaches.",
+    "introBiography": "I’m Sathwik, a Computer Science & Engineering student specializing in ML/AI at Lovely Professional University. I enjoy turning complex data into practical, intelligent applications.",
+    "dsaCount": "100+",
+    "coreFocus": "AI / ML",
+    "quote": "Engineering intelligent systems\nbeyond boundaries.",
+    "services": [
+      "Machine learning solutions",
+      "Data analysis & preprocessing",
+      "Model optimization",
+      "Flask backend development"
     ]
   },
   "projects": [
@@ -143,20 +124,93 @@ window.PORTFOLIO = {
       "approach": "A preprocessing and feature-scaling pipeline prepares sensor data for a KNN classification model."
     }
   ],
+  "education": [
+    {
+      "institution": "Lovely Professional University",
+      "degree": "B.Tech — Computer Science & Engineering",
+      "specialization": "ML/AI",
+      "duration": "Aug '23 – Present",
+      "color": "#ff8c00"
+    },
+    {
+      "institution": "Narayana Junior College",
+      "degree": "Intermediate",
+      "duration": "Aug '21 – Mar '23",
+      "color": "#00f2ff"
+    },
+    {
+      "institution": "Narayana High School",
+      "degree": "Matriculation",
+      "duration": "Apr '20 – Jun '21",
+      "color": "#bc13fe"
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Python",
+      "Java",
+      "C++",
+      "Kotlin"
+    ],
+    "aiml": [
+      "Scikit-Learn",
+      "TensorFlow",
+      "Flask"
+    ],
+    "core": [
+      "DSA",
+      "OOP",
+      "Model Optimization"
+    ],
+    "tools": [
+      "MySQL",
+      "JDBC",
+      "Jupyter Notebook",
+      "GitHub"
+    ]
+  },
+  "skillGroups": [
+    {
+      "key": "languages",
+      "title": "Languages",
+      "symbol": "{ }",
+      "description": "Python, Java, C++ and Kotlin form the foundation for turning an idea into working software."
+    },
+    {
+      "key": "aiml",
+      "title": "AI & machine learning",
+      "symbol": "◉",
+      "description": "From preprocessing with Scikit-Learn to building models with TensorFlow and serving them with Flask."
+    },
+    {
+      "key": "core",
+      "title": "Core foundations",
+      "symbol": "⌘",
+      "description": "Data structures, object-oriented programming and model optimization support reliable problem solving."
+    },
+    {
+      "key": "tools",
+      "title": "Developer tools",
+      "symbol": "▤",
+      "description": "MySQL and JDBC for data, Jupyter for experiments, and GitHub for sharing the work."
+    }
+  ],
   "achievements": [
     {
       "icon": "fas fa-trophy",
       "title": "Top 10 Rank in Hackathon",
       "date": "Feb 2024",
       "desc": "Secured top 10 position in a competitive national-level hackathon.",
-      "link": null
+      "link": null,
+      "badge": "10"
     },
     {
       "icon": "fas fa-terminal",
       "title": "100+ DSA Problems Solved",
       "date": "Ongoing",
       "desc": "Consistently solving algorithmic challenges on LeetCode.",
-      "link": "https://leetcode.com/sathwik205"
+      "link": "https://leetcode.com/sathwik205",
+      "badge": "100+"
     }
   ],
   "certifications": [
@@ -176,7 +230,7 @@ window.PORTFOLIO = {
     },
     {
       "icon": "fas fa-code-branch",
-      "title": "DSA Certification \u2014 I Am Neo",
+      "title": "DSA Certification — I Am Neo",
       "date": "2024",
       "desc": "Intensive Data Structures & Algorithms program completion.",
       "link": "https://drive.google.com/YOUR_DSA_CERT_LINK"

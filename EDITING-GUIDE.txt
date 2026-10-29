@@ -1,0 +1,446 @@
+SATHWIK'S PORTFOLIO — EDITABLE EDITION
+Updated 29 October 2026
+
+This guide belongs to the new, readable source package.
+The design, portrait, artwork and current project content are retained.
+The main improvements are readable code, a complete content editor, editable
+achievement badges, shared profile fields and small interaction refinements.
+
+============================================================
+1. START HERE — NO CODING OR INSTALLATION REQUIRED
+============================================================
+
+1. Download the ZIP and extract it completely.
+2. Keep one untouched copy as a backup.
+3. Open the extracted portfolio folder in VS Code: File -> Open Folder.
+   Choose the folder containing index.html, not the ZIP file itself.
+4. Double-click index.html to view the website in your browser.
+5. Double-click editor.html to open Portfolio Studio.
+
+The website uses ordinary HTML, CSS and JavaScript. It has no npm install or
+build requirement. The entire assets folder is bundled locally.
+
+VS Code settings included in this folder enable word wrapping, two-space
+indentation and formatting on save. Word wrap is helpful for long biography
+strings: those strings intentionally stay on a single logical line so that
+data.js remains importable. The surrounding code is expanded and indented.
+
+DO NOT minify or compress the source files when saving your editable copy.
+
+============================================================
+2. THE SIMPLE RULE FOR FUTURE UPDATES
+============================================================
+
+Your regular content belongs in data.js.
+Use Portfolio Studio forms if you prefer not to edit code.
+
+Studio -> edit content -> Download data.js -> replace local data.js ->
+preview index.html -> upload changed files to GitHub -> check Vercel.
+
+“Save local draft” saves the COMPLETE portfolio in this browser only.
+It does not change the local data.js file or publish the website.
+Download data.js regularly to keep a portable backup.
+
+Studio has six sections:
+Projects: add, edit, reorder and delete projects.
+Profile & story: contact links, resume, portrait paths, biography and headline.
+Achievements: awards, proof links and their large visual badges.
+Certifications: titles, dates, issuer details and credential links.
+Education: qualifications, institutions, specializations and dates.
+Skills: group titles, explanations and lists of skills.
+
+The editor is browser-local. It contains no publishing credentials and is
+not a password-protected CMS. Another visitor cannot use it to edit your site.
+
+============================================================
+3. ADD OR UPDATE A PROJECT
+============================================================
+
+1. Open editor.html and choose Projects.
+2. Select an existing project, or choose Add project.
+3. Enter the full project title.
+4. Choose Machine learning, Generative AI or Other / software.
+5. Write a short poster headline. Enter creates a new line on the card.
+6. Write a clear description of what you built and who it helps.
+7. Add the problem, your approach and a meaningful outcome.
+8. Enter technologies separated by commas: Python, Flask, Pandas.
+9. Add a short tag, such as Computer Vision | Classification.
+10. Paste a complete GitHub URL and, if available, a working demo URL.
+11. Choose built-in artwork or enter your own image path.
+12. Add optional metrics as label: value, one per line.
+13. Choose Download data.js and replace the file in your working folder.
+14. Open index.html and check the card and its details dialog.
+
+For a custom cover:
+Place the file at assets/my-project.webp.
+In Studio's cover field enter: assets/my-project.webp
+Upload that image along with data.js. Downloading data.js does NOT download
+or bundle your newly chosen image.
+
+Image advice:
+- A landscape image around 1200 x 800 is a useful starting point.
+- Use a real WebP/JPEG export; changing an extension is not conversion.
+- Keep filenames lowercase with hyphens and no spaces.
+- Compress large screenshots sensibly; roughly 200 KB is a useful target.
+- Keep key screenshot details away from the title overlay at the bottom.
+- A Google Drive sharing page is not a direct image URL.
+- Prefer local assets over temporary external download links.
+
+Reorder projects with the up/down arrows next to the project list.
+Delete removes the selected project from the draft; publish an export to
+remove it from the live site too. Keep project IDs unchanged when renaming
+or reordering so visitors' My List selections still identify the same work.
+
+Only include metrics you can explain and substantiate. The original health
+project has hideMetrics enabled because its old labels were ambiguous.
+Editing its metrics in Studio enables their display, so review them first.
+
+============================================================
+4. ADD ACHIEVEMENTS, CERTIFICATES AND EDUCATION
+============================================================
+
+Achievements:
+1. Choose Achievements -> Add entry.
+2. Fill in the badge, title, date, description and optional proof URL.
+3. Use Move up or Move down to position it.
+4. Download data.js, preview and publish.
+
+The badge is the large visual number/label on the website. Examples: 1st,
+Top 10, 250+, 2027. It is now editable for EVERY achievement. It no longer
+repeats a hard-coded number when you add a third achievement.
+
+Certificates:
+Choose Certifications -> Add entry. Supply the title, date, issuer/details
+and direct credential page URL. Leave the link empty when unavailable.
+Replace placeholder links such as YOUR_DSA_CERT_LINK before expecting a
+usable certificate button.
+
+Education:
+Choose Education -> Add entry. Enter institution, degree, optional
+specialization and dates. Reorder to show the most relevant/recent first.
+
+Deleting or reordering in any of these tabs changes only the draft until
+you export and publish. Export validation points out incomplete entries.
+
+============================================================
+5. CHANGE YOUR PROFILE, BIOGRAPHY, RESUME OR PICTURE
+============================================================
+
+Choose Profile & story in Studio.
+
+Update your name, display name, surname, initials, email, telephone,
+location, GitHub, LinkedIn or resume URL as needed.
+
+The same DSA count field updates BOTH the opening statistic and the
+introduction statistic. If your achievements mention a separate DSA count,
+update that achievement's text/badge as well; they are independent entries.
+
+Editable story fields include:
+- Opening role/status.
+- Three headline lines.
+- Opening description.
+- Short identity tagline.
+- Full biography.
+- 60-second introduction.
+- Core focus, personal quote and service list.
+
+Keep headlines short enough to fit on a phone. More text is not always
+better: use the biography and project details for depth.
+
+Resume:
+Paste a publicly accessible URL, or put a PDF at assets/sathwik-resume.pdf
+and enter that exact path. Upload the PDF if it is a new local file.
+Test the link in a signed-out browser window.
+
+Portrait:
+The bundled paths are assets/sathwik.webp and assets/sathwik.png.
+You can replace both files with new exports using those exact names.
+Alternatively, change both portrait path fields in Studio.
+If you have only a PNG/JPEG, clear the WebP field and enter the PNG/JPEG
+path in the other field. This removes the alternate source selection.
+Use a roughly square photo and check every portrait placement.
+
+Do not leave an old WebP path pointing to an old picture: many browsers
+will keep selecting it instead of your new PNG. A missing WebP is also
+not guaranteed to fall back automatically to PNG.
+
+For a full rebrand, check the page title/description, logo initial, static
+navigation wording, footer slogan and section headings in index.html too.
+Studio updates the main personal content; it does not rewrite every piece
+of branding or structural heading text.
+
+============================================================
+6. UPDATE YOUR SKILLS
+============================================================
+
+Choose Skills. Each group has a title, symbol, description and a list.
+Write ONE SKILL PER LINE in its skills field.
+
+Changing a group's explanation here updates the detail panel shown when
+the visitor selects that group. Keep the explanation consistent with the
+skills listed in it.
+
+If editing data.js directly, skills contains the lists and skillGroups
+contains the matching key, title, symbol and description for each group.
+To add a whole new group manually, add a list and a matching skillGroups
+entry with a unique key. Existing visual styles cycle every four groups.
+Preview the new layout on desktop and phone.
+
+============================================================
+7. FILE MAP FOR EDITING CODE IN VS CODE
+============================================================
+
+data.js
+  All routine personal content and collections. Start here.
+
+index.html
+  Page sections, navigation, static section headings and dialogs.
+  Section comments mark the hero, projects, story, skills and contact.
+  Elements with data-content="page.biography", for example, get their
+  visible words from that property in data.js.
+
+content.js
+  Connects your data fields to HTML. It also sets portrait sources and
+  service labels. You usually do not need to edit it.
+
+style.css
+  Colors, spacing, layouts, mobile rules and CSS animations. Starts with
+  theme variables such as --bg, --ink, --red and --ease. Existing section
+  comments help you find navigation, opening, projects, story and motion.
+
+script.js
+  Cards, filtering, saved work, project dialogs, search, skills and the
+  featured-project carousel. HTML templates are now multiline too.
+
+motion.js
+  Entrance sequence, scroll reveal observation, reading progress,
+  offscreen pausing, portrait tilt and pointer-follow effects.
+
+editor.html / editor.css
+  Content editor layout and appearance.
+
+editor.js / editor-content.js
+  Project forms, full-content validation/import/export and other tab forms.
+
+assets/
+  Your portrait, sculpture, default project covers and favicon.
+
+tools/check.mjs
+  Optional local source check. With Node installed, open a terminal in the
+  portfolio folder and run: node tools/check.mjs
+  Node is not required for viewing or editing the website.
+
+VS Code tips:
+- Ctrl+P: open a file by name.
+- Ctrl+F: find wording or a section within the current file.
+- Ctrl+Shift+F: search across the whole portfolio folder.
+- Alt+Z: toggle word wrap if your platform uses that shortcut.
+- Save after each small change and refresh the browser.
+- Use the editor's Format Document command if indentation gets messy.
+
+Keep data.js JSON-compatible after window.PORTFOLIO =:
+- Double-quoted keys and text.
+- No trailing commas after the final property/item.
+- Balanced braces and brackets.
+- No executable expressions or functions inside the content object.
+- Use \n within text for an intended newline.
+
+Studio imports data as text/JSON rather than executing uploaded JavaScript.
+This is why its import format is intentionally stricter than general JS.
+
+============================================================
+8. MANUAL EXAMPLES — COPY THE SHAPE, REPLACE THE DETAILS
+============================================================
+
+Example project object inside the projects array:
+
+{
+  "id": "my-new-project",
+  "title": "My New Project",
+  "posterTitle": "MY NEXT\nBIG IDEA.",
+  "category": "other",
+  "artwork": "clusters",
+  "tag": "Software | Full Stack",
+  "description": "The problem I solved and what I built.",
+  "problem": "The user need or technical challenge.",
+  "approach": "My implementation and design decisions.",
+  "tech": ["Python", "Flask"],
+  "highlight": "A meaningful feature or verified result.",
+  "github": "https://github.com/sathwik205/my-new-project",
+  "live": "",
+  "image": ""
+}
+
+Use a real repository URL before publishing. Leave image empty to use
+built-in artwork, or enter a path to a file you actually upload.
+Category: ml, ai or other. Artwork: clusters, pulse or city.
+
+Example achievement object inside the achievements array:
+
+{
+  "badge": "1st",
+  "title": "Your actual achievement",
+  "date": "2027",
+  "desc": "Explain what you accomplished and your contribution.",
+  "link": ""
+}
+
+These are examples, not claims added to your actual portfolio.
+Use a comma BETWEEN adjacent objects when inserting them into an array.
+
+============================================================
+9. FIRST UPGRADE TO THIS EDITION
+============================================================
+
+This edition introduces content.js, motion.js and editor-content.js.
+You must upload the updated site files together ONCE. Uploading only the
+new data.js to your earlier website will not enable these improvements.
+
+1. Back up the current GitHub repository with Code -> Download ZIP.
+2. Extract THIS editable package.
+3. Open index.html and editor.html locally and check them.
+4. Open https://github.com/sathwik205/portfolio on main.
+5. Choose Add file -> Upload files from the repository root.
+6. Upload the website files from INSIDE this extracted folder, including
+   the new scripts, updated CSS, index.html, data.js and editor files.
+7. Keep the assets folder at assets/. Include all bundled images when
+   deploying this package to a new host.
+8. Check paths: index.html and assets must be siblings at the root.
+9. Commit the update and wait for the connected Vercel deployment.
+10. Check the latest Ready deployment and your production domain.
+
+Do not upload the ZIP instead of its contents.
+Do not put everything under another portfolio-main/ directory in GitHub.
+If your newer local content is elsewhere, use Studio Import content first
+and check every tab before downloading the data.js you will publish.
+
+This package was prepared as downloadable source. Its preparation did not
+automatically replace your public GitHub or Vercel website.
+
+============================================================
+10. ROUTINE PUBLISHING AFTER THE FIRST UPGRADE
+============================================================
+
+After this version is installed, normal updates are simple:
+
+1. Start from the latest repository download or your current working copy.
+2. Use Studio to update content.
+3. Download data.js and replace the local file with that exact filename.
+4. Add any new images/PDFs to assets.
+5. Preview the site.
+6. Upload changed data.js and new/replaced assets to GitHub at the same paths.
+7. Commit on the configured production branch, normally main.
+8. Check the connected Vercel deployment, then the production address.
+
+If using a branch, merge it into the production branch when ready.
+Keep your working Vercel configuration. This is still a static website.
+Use your production domain from Vercel's project dashboard when sharing;
+an old deployment URL may keep showing an old version.
+
+Do not replace the whole folder with an outdated ZIP during a small update.
+
+============================================================
+11. DRAFTS, IMPORTS AND BACKUPS
+============================================================
+
+Save local draft stores all tabs in your current browser.
+Download data.js creates a portable copy suitable for publishing.
+Import content replaces the draft's complete content with the file's
+content; it does not publish. Export the current draft first if you need it.
+Reset draft restores all content from the data.js loaded with this editor.
+
+Older data.js files can be imported; new page/profile fields default to
+this edition's bundled values when absent. Review the result before export.
+Drafts from the old project-only editor use a different storage key. To
+bring them over, export from the old editor and import that file here.
+
+If the Studio shows stale content after you update the file, it may have
+restored a saved browser draft. Export anything worth keeping, then reset
+the draft or import your latest data.js.
+
+Keep dated backups such as portfolio-2026-10-29 after successful changes.
+
+============================================================
+12. MOTION AND PERFORMANCE
+============================================================
+
+The existing entrance, portrait tilt, following Explore label, magnetic
+buttons, scroll reveals and hero depth are retained. The new version adds
+a small chapter label and brief staggered card entrances when filtering,
+plus a subtle achievement hover accent.
+
+Native scrolling stays in control. Decorative motion can be paused with
+the page control and respects system reduced-motion preferences. Pointer
+effects are intended for a fine pointer/mouse, not a phone touchscreen.
+
+The opening sequence runs once per browser session. To test it again,
+open a fresh private browsing session. Motion off may also disable it.
+
+To preserve smoothness when editing:
+- Keep images reasonably sized and compressed.
+- Prefer transform and opacity animations.
+- Avoid adding autoplay videos or multiple large animated GIFs.
+- Avoid a permanent JavaScript loop for simple hover effects.
+- Keep reduced-motion and touch behavior intact.
+- Check long new headlines and many projects on a real phone.
+
+Browser rendering/FPS could not be measured in the authoring environment.
+Syntax, local asset checks and DOM-level interaction tests passed; a real
+desktop/mobile visual check is still part of your publishing routine.
+
+============================================================
+13. TROUBLESHOOTING AND RECOVERY
+============================================================
+
+Missing picture:
+Check the file exists in assets, matches the exact case/extension, and was
+uploaded. Check for assets/assets/ nesting. For portrait images, check both
+selected WebP and PNG/JPG paths. Wait for the correct deployment to finish.
+
+No updates on the website:
+Save local draft alone does not publish. Export and upload data.js.
+Verify the branch and latest deployment. Hard-refresh the production URL.
+
+Studio does not download:
+Read the status message. Finish required fields and correct invalid URLs.
+Do not leave a newly added blank achievement or project in the export.
+
+Import fails:
+Use a Studio-exported data.js, or restore quoted JSON-compatible keys and
+remove trailing commas. Import does not execute arbitrary JS expressions.
+
+Page loses interactions after a manual edit:
+Restore the last working data.js, check punctuation, or run the optional
+node tools/check.mjs command. Developer Tools -> Console can show errors.
+
+A new edition is partly missing:
+Confirm content.js, motion.js and editor-content.js were uploaded. The
+HTML references these new files; they must travel with this edition.
+
+Recovering from a bad deployment:
+Restore the affected files from your working backup and commit that fix.
+An urgent Vercel rollback may restore a previous deployment, but also fix
+the GitHub source so the next commit does not reintroduce the problem.
+
+============================================================
+14. YOUR FINAL CHECKLIST
+============================================================
+
+[ ] Latest files, not an old backup.
+[ ] New projects have unique stable IDs and complete descriptions.
+[ ] New achievements have the right badge, date and proof URL.
+[ ] Resume and links open while signed out.
+[ ] Portrait and all project images display.
+[ ] Project details, filters, search and My List work.
+[ ] Text fits at phone width.
+[ ] Motion off still leaves all content visible.
+[ ] Only intended changes are committed.
+[ ] The correct production deployment is Ready.
+
+Your repository: https://github.com/sathwik205/portfolio
+Vercel dashboard: https://vercel.com/dashboard
+
+Platform reference links (interfaces may evolve):
+https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+https://vercel.com/docs/git
+https://vercel.com/docs/deployments/managing-deployments

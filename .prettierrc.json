@@ -1,0 +1,13 @@
+{
+  "printWidth": 88,
+  "tabWidth": 2,
+  "useTabs": false,
+  "quoteProps": "preserve",
+  "htmlWhitespaceSensitivity": "strict",
+  "overrides": [
+    {
+      "files": "data.js",
+      "options": { "trailingComma": "none" }
+    }
+  ]
+}

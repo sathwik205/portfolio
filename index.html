@@ -1,46 +1,416 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101010">
-<meta name="description" content="Sathwik Sai Veerapuneni — aspiring AI/ML engineer. Explore machine learning projects, intelligent applications, and the curiosity behind the code.">
-<title>Sathwik — Curiosity, Engineered.</title>
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
-<script src="data.js" defer></script><script src="script.js" defer></script>
-</head>
-<body>
-<a class="skip" href="#projects">Skip to projects</a>
-<div class="entrance" aria-hidden="true"><div class="entrance-top"></div><div class="entrance-bottom"></div><div class="entrance-title"><span>SATHWIK</span><small>A MIND IN MOTION.</small></div><i></i></div>
-<div class="reading-progress" aria-hidden="true"><span></span></div>
-<header>
-<a class="wordmark" href="#home" aria-label="Sathwik home">S<span class="brand-dot">.</span><small>SATHWIK<br>VEERAPUNENI</small></a>
-<nav aria-label="Main navigation"><a href="#projects">Selected work</a><a href="#story">The person</a><button id="list-nav">My List <span id="list-count">0</span></button></nav>
-<div class="nav-tools"><button class="icon-button" id="search-open" aria-label="Search portfolio"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></svg></button><a class="contact-nav" href="#contact">Let’s connect <span>↗</span></a></div>
-</header>
-<main>
-<section class="hero" id="home">
-<div class="hero-topline"><span><i></i> AI / ML · ENGINEER IN THE MAKING</span><span>BASED IN PUNJAB, INDIA</span></div>
-<div class="hero-art" aria-hidden="true"><div class="art-halo"></div><div class="sculpture-wrap"><picture><source srcset="assets/sculpture.webp" type="image/webp"><img class="sculpture" src="assets/sculpture.png" alt="" width="760" height="720" fetchpriority="high"></picture></div><div class="art-cross cross-one">+</div><div class="art-cross cross-two">+</div><span class="art-coordinate">FIG. 001 — CURIOSITY, CONNECTED.</span><div class="art-tag"><i></i> ALWAYS LEARNING<span>Python / TensorFlow / Ideas</span></div></div>
-<div class="hero-copy"><a href="#story" class="hero-person" aria-label="Meet Sathwik"><picture><source srcset="assets/sathwik.webp" type="image/webp"><img src="assets/sathwik.png" alt="" width="48" height="48" decoding="async"></picture><span>SATHWIK SAI VEERAPUNENI<small>THE MIND BEHIND THE WORK ↗</small></span></a><h1><span class="headline-line"><span>Built on</span></span><span class="headline-line"><span>curiosity<span class="red">.</span></span></span><span class="headline-line hero-final"><em>Powered by AI.</em></span></h1><p class="hero-description">I turn data into decisions and ideas into intelligent systems.<br>Explore the experiments. Meet the mind behind them.</p><div class="actions"><a class="button primary" href="#projects">Explore selected work <span>↗</span></a><button class="button secondary" id="intro-open"><span class="play-icon">▶</span> The 60-second intro</button></div></div>
-<div class="hero-bottom"><span class="hero-edition">AN ORIGINAL PORTFOLIO<br><b>CODE. CREATE. KEEP GOING.</b></span><div class="hero-stat"><strong id="hero-count">03</strong><span>PROJECTS<br>& COUNTING</span></div><div class="hero-stat"><strong>100+</strong><span>DSA PROBLEMS<br>SOLVED</span></div><a href="#projects" class="scroll-cue"><span>SCROLL TO<br>DISCOVER</span><i>↓</i></a></div>
-</section>
-<div class="ticker" aria-hidden="true"><div>HUMAN CURIOSITY <span>✳</span> MACHINE INTELLIGENCE <span>✳</span> REAL-WORLD POSSIBILITIES <span>✳</span> HUMAN CURIOSITY <span>✳</span> MACHINE INTELLIGENCE <span>✳</span> REAL-WORLD POSSIBILITIES <span>✳</span></div></div>
-<section class="catalog" id="projects"><div class="section-heading"><div><p class="eyebrow small">01 / SELECTED WORK</p><h2>Ideas, made <em>real.</em></h2></div><p class="section-aside">A collection of experiments in machine learning,<br>generative AI, and solving things that matter.</p></div>
-<div class="feature-stage" id="feature-stage"></div>
-<div class="collection-heading"><h3>The complete collection <span id="collection-count"></span></h3><div class="filters" role="group" aria-label="Filter projects"><button class="selected" data-filter="all" aria-pressed="true">All work</button><button data-filter="ml" aria-pressed="false">Machine learning</button><button data-filter="ai" aria-pressed="false">Generative AI</button><button data-filter="other" aria-pressed="false">Other</button></div></div>
-<div class="project-grid" id="project-grid"></div><p class="empty" id="project-empty" hidden>No projects in this category yet. Explore the complete collection.</p>
-<div class="gallery-footer"><span>Each project has a story. Open one to explore the details.</span><span>BUILT TO LEARN. BUILT TO LAST.</span></div>
-</section>
-<section id="saved" class="catalog saved-section" hidden><div class="section-heading"><h2>Your shortlist.</h2><button class="text-button" id="close-list">Close collection ×</button></div><div id="saved-grid" class="project-grid"></div><p id="saved-empty" class="empty">Keep the projects that interest you. Use + on any card to save it here.</p></section>
-<section class="story section-pad" id="story"><div class="story-title"><p class="eyebrow small">02 / THE PERSON BEHIND THE PIXELS</p><h2>Curiosity is<br>my <em>source code.</em></h2><div class="identity-card"><div class="identity-avatar"><picture><source srcset="assets/sathwik.webp" type="image/webp"><img src="assets/sathwik.png" alt="" width="54" height="61" loading="lazy" decoding="async"></picture><span>✳</span></div><div><strong>Sathwik Sai Veerapuneni</strong><small>Problem solver. Builder. Perpetual learner.</small></div></div><p>Aspiring AI/ML Engineer with a strong foundation in Machine Learning, Data Structures, and Object-Oriented Programming. Passionate about building intelligent systems and solving real-world problems through data-driven approaches.</p><a class="text-link" id="resume" target="_blank" rel="noopener">Get the full picture — view résumé <span>↗</span></a></div><div class="episodes"><div class="portrait-stage"><figure class="portrait-card" aria-labelledby="portrait-caption"><div class="portrait-frame"><picture><source srcset="assets/sathwik.webp" type="image/webp"><img src="assets/sathwik.png" alt="Illustrated portrait of Sathwik Sai Veerapuneni" width="1254" height="1254" loading="lazy" decoding="async"></picture><span class="portrait-corner portrait-corner-top" aria-hidden="true">✳</span><span class="portrait-edition" aria-hidden="true">THE PERSON<br>BEHIND THE CODE</span><div class="portrait-light" aria-hidden="true"></div></div><figcaption id="portrait-caption"><div><strong>Sathwik.</strong><span>CURIOUS BY NATURE. BUILDER BY CHOICE.</span></div><span class="portrait-sign" aria-hidden="true">SV↗</span></figcaption></figure></div><p class="portrait-hint">MOVE YOUR POINTER. MEET THE PERSON.</p><div class="episode-heading"><h3>The journey so far</h3><span id="education-count">3 CHAPTERS</span></div><div id="education"></div><div class="story-note"><span>✳</span><p>“Engineering intelligent systems<br>beyond boundaries.”</p></div></div></section>
-<section class="section-pad stack-section" id="expertise"><div class="section-heading"><div><p class="eyebrow small">03 / THE TOOLKIT</p><h2>Behind every build,<br><em>a considered stack.</em></h2></div><p class="section-aside">Select a discipline to look under the hood.</p></div><div class="stack" id="skills"></div><div class="stack-detail" id="stack-detail" aria-live="polite"></div><div class="services"><span>Machine learning solutions</span><span>Data analysis & preprocessing</span><span>Model optimization</span><span>Flask backend development</span></div></section>
-<section class="section-pad recognition" id="recognition"><div class="section-heading"><div><p class="eyebrow small">04 / PROGRESS, RECOGNIZED</p><h2>Small wins.<br><em>Forward momentum.</em></h2></div></div><div id="achievements" class="achievement-grid"></div><h3 class="credential-title">Credentials & continuous learning <span>↘</span></h3><div id="certifications" class="cert-grid"></div></section>
-<section id="contact" class="section-pad contact"><div class="contact-top"><p class="eyebrow small">05 / THE NEXT CHAPTER</p><span>HAVE A CHALLENGE IN MIND?</span></div><h2>LET’S BUILD<br><em>WHAT’S NEXT.</em><span class="contact-star" aria-hidden="true">✳</span></h2><div class="contact-bottom"><p>Interesting problems deserve thoughtful solutions.<br>Let’s start with a conversation.</p><div><a id="email" class="button primary">Say hello <span>↗</span></a><button id="copy-email" class="button secondary">Copy email</button></div></div><div class="socials" id="socials"></div></section>
-</main>
-<aside class="chapter-nav" aria-label="Page chapters"><a href="#home" class="current" aria-label="Opening"><span>Opening</span></a><a href="#projects" aria-label="Projects"><span>Projects</span></a><a href="#story" aria-label="My story"><span>My story</span></a><a href="#expertise" aria-label="Expertise"><span>Expertise</span></a><a href="#contact" aria-label="Contact"><span>Contact</span></a></aside>
-<button id="motion-toggle" class="motion-toggle" aria-pressed="false" aria-label="Pause decorative motion"><span>Ⅱ</span> Motion on</button>
-<footer><a href="#home" class="footer-brand">SATHWIK<span>✳</span></a><div><span>A little cinema. A lot of curiosity.</span><a href="#home">BACK TO TOP ↑</a></div></footer><div id="toast" role="status"></div>
-<dialog id="project-dialog" aria-labelledby="detail-title"><button class="dialog-close" aria-label="Close project">×</button><div id="detail"></div></dialog>
-<dialog id="intro-dialog" aria-labelledby="intro-title"><button class="dialog-close" aria-label="Close introduction">×</button><div class="intro-content"><picture class="intro-portrait"><source srcset="assets/sathwik.webp" type="image/webp"><img src="assets/sathwik.png" alt="Sathwik Sai Veerapuneni" width="84" height="84" loading="lazy" decoding="async"></picture><p class="eyebrow small">THE QUICK INTRO / ABOUT 60 SECONDS</p><h2 id="intro-title">Meet the mind<br>behind the models.</h2><p class="intro-bio">I’m Sathwik, a Computer Science & Engineering student specializing in ML/AI at Lovely Professional University. I enjoy turning complex data into practical, intelligent applications.</p><div class="intro-facts"><div><strong>AI / ML</strong><span>CORE FOCUS</span></div><div><strong>100+</strong><span>DSA PROBLEMS SOLVED</span></div></div><h3>Start with the work</h3><div id="intro-projects"></div><div class="actions"><a id="intro-resume" class="button primary" target="_blank" rel="noopener">View résumé ↗</a><a href="#contact" id="intro-contact" class="button secondary">Let’s connect ↗</a></div></div></dialog>
-<dialog id="search-dialog" aria-labelledby="search-title"><div class="search-heading"><h2 id="search-title">What sparks your curiosity?</h2><button class="dialog-close" aria-label="Close search">×</button></div><label class="sr-only" for="search-input">Search projects, skills and sections</label><input id="search-input" type="search" placeholder="Try Python, health, education…" autocomplete="off"><div id="search-results"></div><p class="muted search-hint">Projects, skills, and the person behind the work.</p></dialog>
-<noscript><p class="noscript-note">For project interactions, enable JavaScript. You can still reach Sathwik at <a href="mailto:veerapunenisathwik@gmail.com">veerapunenisathwik@gmail.com</a>.</p></noscript>
-</body></html>
+  <head>
+    <meta charset="UTF-8" /><meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    /><meta name="theme-color" content="#101010" />
+    <meta
+      name="description"
+      content="Sathwik Sai Veerapuneni — aspiring AI/ML engineer. Explore machine learning projects, intelligent applications, and the curiosity behind the code."
+    />
+    <title>Sathwik — Curiosity, Engineered.</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" /><link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <script src="data.js" defer></script
+    ><script src="content.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="motion.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#projects">Skip to projects</a>
+    <div class="entrance" aria-hidden="true"
+      ><div class="entrance-top"></div><div class="entrance-bottom"></div
+      ><div class="entrance-title"
+        ><span data-content="profile.shortName" class="uppercase">SATHWIK</span
+        ><small>A MIND IN MOTION.</small></div
+      ><i></i
+    ></div>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <!-- 01. NAVIGATION — content is in data.js -->
+    <header>
+      <a class="wordmark" href="#home" aria-label="Sathwik home"
+        >S<span class="brand-dot">.</span
+        ><small
+          ><span data-content="profile.shortName">SATHWIK</span><br /><span
+            data-content="profile.surname"
+            >VEERAPUNENI</span
+          ></small
+        ></a
+      >
+      <nav aria-label="Main navigation"
+        ><a href="#projects">Selected work</a><a href="#story">The person</a
+        ><button id="list-nav">My List <span id="list-count">0</span></button></nav
+      >
+      <div class="nav-tools"
+        ><button class="icon-button" id="search-open" aria-label="Search portfolio"
+          ><svg viewBox="0 0 24 24">
+            <circle cx="10" cy="10" r="6.5" />
+            <path d="m15 15 6 6" /></svg></button
+        ><a class="contact-nav" href="#contact">Let’s connect <span>↗</span></a></div
+      >
+    </header>
+    <main>
+      <!-- 02. OPENING / HERO — content is in data.js -->
+      <section class="hero" id="home" data-chapter="01 / OPENING">
+        <div class="hero-topline"
+          ><span
+            ><i></i>
+            <span data-content="page.heroStatus"
+              >AI / ML · ENGINEER IN THE MAKING</span
+            ></span
+          ><span id="hero-location">BASED IN PUNJAB, INDIA</span></div
+        >
+        <div class="hero-art" aria-hidden="true"
+          ><div class="art-halo"></div
+          ><div class="sculpture-wrap"
+            ><picture
+              ><source srcset="assets/sculpture.webp" type="image/webp" /><img
+                class="sculpture"
+                src="assets/sculpture.png"
+                alt=""
+                width="760"
+                height="720"
+                fetchpriority="high" /></picture></div
+          ><div class="art-cross cross-one">+</div
+          ><div class="art-cross cross-two">+</div
+          ><span class="art-coordinate">FIG. 001 — CURIOSITY, CONNECTED.</span
+          ><div class="art-tag"
+            ><i></i> ALWAYS LEARNING<span>Python / TensorFlow / Ideas</span></div
+          ></div
+        >
+        <div class="hero-copy"
+          ><a href="#story" class="hero-person" aria-label="Meet Sathwik"
+            ><picture
+              ><source
+                data-portrait-webp
+                srcset="assets/sathwik.webp"
+                type="image/webp" /><img
+                data-portrait-png
+                src="assets/sathwik.png"
+                alt=""
+                width="48"
+                height="48"
+                decoding="async" /></picture
+            ><span
+              ><span data-content="profile.name" class="uppercase"
+                >SATHWIK SAI VEERAPUNENI</span
+              ><small>THE MIND BEHIND THE WORK ↗</small></span
+            ></a
+          ><h1
+            ><span class="headline-line"
+              ><span data-content="page.headlineStart">Built on</span></span
+            ><span class="headline-line"
+              ><span
+                ><span data-content="page.headlineMain">curiosity</span
+                ><span class="red">.</span></span
+              ></span
+            ><span class="headline-line hero-final"
+              ><em data-content="page.headlineAccent">Powered by AI.</em></span
+            ></h1
+          ><p
+            class="hero-description preserve-lines"
+            data-content="page.heroDescription"
+            >I turn data into decisions and ideas into intelligent systems.<br />Explore
+            the experiments. Meet the mind behind them.</p
+          ><div class="actions"
+            ><a class="button primary" href="#projects"
+              >Explore selected work <span>↗</span></a
+            ><button class="button secondary" id="intro-open"
+              ><span class="play-icon">▶</span> The 60-second intro</button
+            ></div
+          ></div
+        >
+        <div class="hero-bottom"
+          ><span class="hero-edition"
+            >AN ORIGINAL PORTFOLIO<br /><b>CODE. CREATE. KEEP GOING.</b></span
+          ><div class="hero-stat"
+            ><strong id="hero-count">03</strong
+            ><span>PROJECTS<br />& COUNTING</span></div
+          ><div class="hero-stat"
+            ><strong data-content="page.dsaCount">100+</strong
+            ><span>DSA PROBLEMS<br />SOLVED</span></div
+          ><a href="#projects" class="scroll-cue"
+            ><span>SCROLL TO<br />DISCOVER</span><i>↓</i></a
+          ></div
+        >
+      </section>
+      <div class="ticker" aria-hidden="true"
+        ><div
+          >HUMAN CURIOSITY <span>✳</span> MACHINE INTELLIGENCE
+          <span>✳</span> REAL-WORLD POSSIBILITIES <span>✳</span> HUMAN CURIOSITY
+          <span>✳</span> MACHINE INTELLIGENCE <span>✳</span> REAL-WORLD POSSIBILITIES
+          <span>✳</span></div
+        ></div
+      >
+      <!-- 03. PROJECT COLLECTION — content is in data.js -->
+      <section class="catalog" id="projects" data-chapter="02 / SELECTED WORK"
+        ><div class="section-heading"
+          ><div
+            ><p class="eyebrow small">01 / SELECTED WORK</p
+            ><h2>Ideas, made <em>real.</em></h2></div
+          ><p class="section-aside"
+            >A collection of experiments in machine learning,<br />generative AI, and
+            solving things that matter.</p
+          ></div
+        >
+        <div class="feature-stage" id="feature-stage"></div>
+        <div class="collection-heading"
+          ><h3>The complete collection <span id="collection-count"></span></h3
+          ><div class="filters" role="group" aria-label="Filter projects"
+            ><button class="selected" data-filter="all" aria-pressed="true"
+              >All work</button
+            ><button data-filter="ml" aria-pressed="false">Machine learning</button
+            ><button data-filter="ai" aria-pressed="false">Generative AI</button
+            ><button data-filter="other" aria-pressed="false">Other</button></div
+          ></div
+        >
+        <div class="project-grid" id="project-grid"></div
+        ><p class="empty" id="project-empty" hidden
+          >No projects in this category yet. Explore the complete collection.</p
+        >
+        <div class="gallery-footer"
+          ><span>Each project has a story. Open one to explore the details.</span
+          ><span>BUILT TO LEARN. BUILT TO LAST.</span></div
+        >
+      </section>
+      <section id="saved" class="catalog saved-section" hidden
+        ><div class="section-heading"
+          ><h2>Your shortlist.</h2
+          ><button class="text-button" id="close-list">Close collection ×</button></div
+        ><div id="saved-grid" class="project-grid"></div
+        ><p id="saved-empty" class="empty"
+          >Keep the projects that interest you. Use + on any card to save it here.</p
+        ></section
+      >
+      <!-- 04. ABOUT YOU + EDUCATION — content is in data.js -->
+      <section class="story section-pad" id="story" data-chapter="03 / YOUR STORY"
+        ><div class="story-title"
+          ><p class="eyebrow small">02 / THE PERSON BEHIND THE PIXELS</p
+          ><h2>Curiosity is<br />my <em>source code.</em></h2
+          ><div class="identity-card"
+            ><div class="identity-avatar"
+              ><picture
+                ><source
+                  data-portrait-webp
+                  srcset="assets/sathwik.webp"
+                  type="image/webp" /><img
+                  data-portrait-png
+                  src="assets/sathwik.png"
+                  alt=""
+                  width="54"
+                  height="61"
+                  loading="lazy"
+                  decoding="async" /></picture
+              ><span>✳</span></div
+            ><div
+              ><strong data-content="profile.name">Sathwik Sai Veerapuneni</strong
+              ><small data-content="page.identityTagline"
+                >Problem solver. Builder. Perpetual learner.</small
+              ></div
+            ></div
+          ><p data-content="page.biography"
+            >Aspiring AI/ML Engineer with a strong foundation in Machine Learning, Data
+            Structures, and Object-Oriented Programming. Passionate about building
+            intelligent systems and solving real-world problems through data-driven
+            approaches.</p
+          ><a class="text-link" id="resume" target="_blank" rel="noopener"
+            >Get the full picture — view résumé <span>↗</span></a
+          ></div
+        ><div class="episodes"
+          ><div class="portrait-stage"
+            ><figure class="portrait-card" aria-labelledby="portrait-caption"
+              ><div class="portrait-frame"
+                ><picture
+                  ><source
+                    data-portrait-webp
+                    srcset="assets/sathwik.webp"
+                    type="image/webp" /><img
+                    data-portrait-png
+                    src="assets/sathwik.png"
+                    alt="Illustrated portrait of Sathwik Sai Veerapuneni"
+                    width="1254"
+                    height="1254"
+                    loading="lazy"
+                    decoding="async" /></picture
+                ><span class="portrait-corner portrait-corner-top" aria-hidden="true"
+                  >✳</span
+                ><span class="portrait-edition" aria-hidden="true"
+                  >THE PERSON<br />BEHIND THE CODE</span
+                ><div class="portrait-light" aria-hidden="true"></div></div
+              ><figcaption id="portrait-caption"
+                ><div
+                  ><strong
+                    ><span data-content="profile.shortName">Sathwik</span>.</strong
+                  ><span>CURIOUS BY NATURE. BUILDER BY CHOICE.</span></div
+                ><span class="portrait-sign" aria-hidden="true"
+                  ><span data-content="profile.initials">SV</span>↗</span
+                ></figcaption
+              ></figure
+            ></div
+          ><p class="portrait-hint">MOVE YOUR POINTER. MEET THE PERSON.</p
+          ><div class="episode-heading"
+            ><h3>The journey so far</h3
+            ><span id="education-count">3 CHAPTERS</span></div
+          ><div id="education"></div
+          ><div class="story-note"
+            ><span>✳</span
+            ><p
+              >“<span class="preserve-lines" data-content="page.quote"
+                >Engineering intelligent systems<br />beyond boundaries.</span
+              >”</p
+            ></div
+          ></div
+        ></section
+      >
+      <!-- 05. SKILLS — content is in data.js -->
+      <section
+        class="section-pad stack-section"
+        id="expertise"
+        data-chapter="04 / EXPERTISE"
+        ><div class="section-heading"
+          ><div
+            ><p class="eyebrow small">03 / THE TOOLKIT</p
+            ><h2>Behind every build,<br /><em>a considered stack.</em></h2></div
+          ><p class="section-aside">Select a discipline to look under the hood.</p></div
+        ><div class="stack" id="skills"></div
+        ><div class="stack-detail" id="stack-detail" aria-live="polite"></div
+        ><div class="services" id="services"
+          ><span>Machine learning solutions</span
+          ><span>Data analysis & preprocessing</span><span>Model optimization</span
+          ><span>Flask backend development</span></div
+        ></section
+      >
+      <!-- 06. ACHIEVEMENTS + CERTIFICATIONS — content is in data.js -->
+      <section
+        class="section-pad recognition"
+        id="recognition"
+        data-chapter="05 / RECOGNITION"
+        ><div class="section-heading"
+          ><div
+            ><p class="eyebrow small">04 / PROGRESS, RECOGNIZED</p
+            ><h2>Small wins.<br /><em>Forward momentum.</em></h2></div
+          ></div
+        ><div id="achievements" class="achievement-grid"></div
+        ><h3 class="credential-title"
+          >Credentials & continuous learning <span>↘</span></h3
+        ><div id="certifications" class="cert-grid"></div
+      ></section>
+      <!-- 07. CONTACT — content is in data.js -->
+      <section id="contact" data-chapter="06 / CONTACT" class="section-pad contact"
+        ><div class="contact-top"
+          ><p class="eyebrow small">05 / THE NEXT CHAPTER</p
+          ><span>HAVE A CHALLENGE IN MIND?</span></div
+        ><h2
+          >LET’S BUILD<br /><em>WHAT’S NEXT.</em
+          ><span class="contact-star" aria-hidden="true">✳</span></h2
+        ><div class="contact-bottom"
+          ><p
+            >Interesting problems deserve thoughtful solutions.<br />Let’s start with a
+            conversation.</p
+          ><div
+            ><a id="email" class="button primary">Say hello <span>↗</span></a
+            ><button id="copy-email" class="button secondary">Copy email</button></div
+          ></div
+        ><div class="socials" id="socials"></div
+      ></section>
+    </main>
+    <aside class="chapter-nav" aria-label="Page chapters"
+      ><a href="#home" class="current" aria-label="Opening"><span>Opening</span></a
+      ><a href="#projects" aria-label="Projects"><span>Projects</span></a
+      ><a href="#story" aria-label="My story"><span>My story</span></a
+      ><a href="#expertise" aria-label="Expertise"><span>Expertise</span></a
+      ><a href="#recognition" aria-label="Recognition"><span>Recognition</span></a
+      ><a href="#contact" aria-label="Contact"><span>Contact</span></a></aside
+    >
+    <div class="chapter-status" aria-hidden="true"
+      ><span class="chapter-status-line"></span
+      ><span id="chapter-label">01 / OPENING</span></div
+    >
+    <button
+      id="motion-toggle"
+      class="motion-toggle"
+      aria-pressed="false"
+      aria-label="Pause decorative motion"
+      ><span>Ⅱ</span> Motion on</button
+    >
+    <footer
+      ><a href="#home" class="footer-brand"
+        ><span data-content="profile.shortName" class="footer-name">SATHWIK</span
+        ><span>✳</span></a
+      ><div
+        ><span>A little cinema. A lot of curiosity.</span
+        ><a href="#home">BACK TO TOP ↑</a></div
+      ></footer
+    ><div id="toast" role="status"></div>
+    <!-- 08. DIALOGS — content is in data.js -->
+    <dialog id="project-dialog" aria-labelledby="detail-title"
+      ><button class="dialog-close" aria-label="Close project">×</button
+      ><div id="detail"></div
+    ></dialog>
+    <dialog id="intro-dialog" aria-labelledby="intro-title"
+      ><button class="dialog-close" aria-label="Close introduction">×</button
+      ><div class="intro-content"
+        ><picture class="intro-portrait"
+          ><source
+            data-portrait-webp
+            srcset="assets/sathwik.webp"
+            type="image/webp" /><img
+            data-portrait-png
+            src="assets/sathwik.png"
+            alt="Sathwik Sai Veerapuneni"
+            width="84"
+            height="84"
+            loading="lazy"
+            decoding="async" /></picture
+        ><p class="eyebrow small">THE QUICK INTRO / ABOUT 60 SECONDS</p
+        ><h2 id="intro-title">Meet the mind<br />behind the models.</h2
+        ><p class="intro-bio" data-content="page.introBiography"
+          >I’m Sathwik, a Computer Science & Engineering student specializing in ML/AI
+          at Lovely Professional University. I enjoy turning complex data into
+          practical, intelligent applications.</p
+        ><div class="intro-facts"
+          ><div
+            ><strong data-content="page.coreFocus">AI / ML</strong
+            ><span>CORE FOCUS</span></div
+          ><div
+            ><strong data-content="page.dsaCount">100+</strong
+            ><span>DSA PROBLEMS SOLVED</span></div
+          ></div
+        ><h3>Start with the work</h3><div id="intro-projects"></div
+        ><div class="actions"
+          ><a id="intro-resume" class="button primary" target="_blank" rel="noopener"
+            >View résumé ↗</a
+          ><a href="#contact" id="intro-contact" class="button secondary"
+            >Let’s connect ↗</a
+          ></div
+        ></div
+      ></dialog
+    >
+    <dialog id="search-dialog" aria-labelledby="search-title"
+      ><div class="search-heading"
+        ><h2 id="search-title">What sparks your curiosity?</h2
+        ><button class="dialog-close" aria-label="Close search">×</button></div
+      ><label class="sr-only" for="search-input"
+        >Search projects, skills and sections</label
+      ><input
+        id="search-input"
+        type="search"
+        placeholder="Try Python, health, education…"
+        autocomplete="off"
+      /><div id="search-results"></div
+      ><p class="muted search-hint"
+        >Projects, skills, and the person behind the work.</p
+      ></dialog
+    >
+    <noscript
+      ><p class="noscript-note"
+        >For project interactions, enable JavaScript. You can still reach Sathwik at
+        <a href="mailto:veerapunenisathwik@gmail.com">veerapunenisathwik@gmail.com</a
+        >.</p
+      ></noscript
+    >
+  </body></html
+>
